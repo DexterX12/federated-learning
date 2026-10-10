@@ -24,3 +24,16 @@ clientapp = "client:app"
 
 [tool.flwr.app.config]
 num-server-rounds = 5
+
+[superlink]
+default = "local-deployment"
+
+[superlink.supergrid]
+address = "api.flower.ai"
+
+[superlink.local]
+address = ":local:"
+
+[superlink.local-deployment]
+address = "127.0.0.1:8000"
+insecure = true
